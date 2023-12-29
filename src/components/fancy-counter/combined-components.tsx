@@ -21,7 +21,7 @@ export default function CombinedComponents() {
   };
 
   const handleResetClick = () => {
-    setResetCount(0);
+    setCount(0);
   };
 
   return (
