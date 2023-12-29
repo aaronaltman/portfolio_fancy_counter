@@ -1,14 +1,16 @@
 import { RotateCcw } from "lucide-react";
-import React, { useState } from "react";
+import { Button } from "../ui/button";
 
-export default function ResetButton() {
-  const [resetcount, setResetCount] = useState(0);
-
-  const handleResetClick = () => {
-    setResetCount(0);
-  };
-
-  <button onClick={handleResetClick} className="text-white py-6">
-    <RotateCcw size={40} />
-  </button>;
+export default function ResetButton({ handleResetClick }: any) {
+  return (
+    <div className="bg-slate-800">
+      <Button
+        variant={null}
+        onClick={handleResetClick}
+        className="text-white py-10"
+      >
+        <RotateCcw size={30} />
+      </Button>
+    </div>
+  );
 }
