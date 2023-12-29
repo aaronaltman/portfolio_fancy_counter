@@ -8,13 +8,12 @@ import PlusMinusButtons from "./p-m-buttons";
 export default function CombinedComponents() {
   const [resetcount, setResetCount] = useState(0);
   const [count, setCount] = useState(0);
-  const [newcount, setNewCount] = useState(0);
 
   const handleMinusClick = () => {
-    setNewCount(newcount - 1);
+    setCount(count - 1);
   };
   const handlePlusClick = () => {
-    setNewCount(newcount + 1);
+    setCount(count + 1);
   };
 
   const handleCountChange = (event: React.ChangeEvent<HTMLInputElement>) => {

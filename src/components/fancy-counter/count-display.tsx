@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 
 export default function CountDisplay({
   handleCountChange,
@@ -12,7 +12,7 @@ export default function CountDisplay({
   }, [count]);
 
   return (
-    <section className="text-white text-8xl py-4" onChange={handleCountChange}>
+    <section className="text-white text-8xl py-4" onClick={handleCountChange}>
       {count}
     </section>
   );
